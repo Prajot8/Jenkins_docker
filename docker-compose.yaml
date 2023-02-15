@@ -1,0 +1,7 @@
+version: '3.9'
+services:
+  apache:
+    image: html-img-1
+    container_name: my-website-2
+    ports:
+      - '80:80'
