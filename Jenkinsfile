@@ -13,6 +13,12 @@ pipeline{
         docker images'''
       }
     }
+    stage('Run image'){
+      steps{
+        sh'''docker-compose up -d
+        docker ps -a'''
+      }
+    }
     }
 
 }
