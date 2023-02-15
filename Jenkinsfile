@@ -9,7 +9,7 @@ pipeline{
     }
     stage('Build'){
       steps{
-        sh'''docker build -t html-img-1
+        sh'''docker build -t html-img-1 .
         docker images'''
       }
     }
